@@ -14,11 +14,11 @@ class bash {
 	}
 
 	bash::prompt { "/etc/skel/.bashrc":
-		color => '\033[01;32m',
+		color => hiera('green'),
 	}
 
 	bash::prompt { "/root/.bashrc":
-		color => '\033[01;31m',
+		color => hiera('red'),
 	}
 }
 

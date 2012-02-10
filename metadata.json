@@ -6,11 +6,12 @@
   "project_page": "http://github.com/dhoppe/puppet-bash",
   "source": "git://github.com/dhoppe/puppet-bash",
   "summary": "BASH Module",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "checksums": {
-    "Modulefile": "97ef387afe123bfc927421ef97ed2ab0",
-    "README": "5a77a9bf3db66e450a92116ac3adf7dd",
-    "manifests/init.pp": "6e81519e93bb67453c8e611f885dd66b",
+    "Modulefile": "0cc486c1ccd70b99cfcc75c865ec139b",
+    "README": "1b88245d9cdbfed44ddab0a11ce9936c",
+    "examples/bash.yaml": "fc404e95af10d646bea0c8b4c1c55b10",
+    "manifests/init.pp": "81a82db7679afa0f7527b6ffb05ca63a",
     "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
     "spec/spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
     "templates/lenny/etc/skel/bashrc.erb": "6bf4237b5a137f133728abb07fe92a3e",
@@ -19,5 +20,10 @@
     "templates/squeeze/etc/skel/bashrc.erb": "e1ce6073a6ebe3b29afa27b161c11323",
     "tests/init.pp": "31b78a37212a0bdaaa3a2ea558b91721"
   },
-  "dependencies": []
+  "dependencies": [
+    {
+      "name": "dhoppe/puppet",
+      "versionRequirement": "\u003e\u003d0.0.1"
+    }
+  ]
 }
