@@ -8,16 +8,16 @@ class bash {
 		file { "$name":
 			owner   => root,
 			group   => root,
-			mode    => 0644,
+			mode    => '0644',
 			content => template("bash/${::lsbdistcodename}/etc/skel/bashrc.erb"),
 		}
 	}
 
-	bash::prompt { "/etc/skel/.bashrc":
+	bash::prompt { '/etc/skel/.bashrc':
 		color => hiera('green'),
 	}
 
-	bash::prompt { "/root/.bashrc":
+	bash::prompt { '/root/.bashrc':
 		color => hiera('red'),
 	}
 }
