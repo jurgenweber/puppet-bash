@@ -1,4 +1,7 @@
 class bash {
+	validate_string(hiera('green'))
+	validate_string(hiera('red'))
+
 	define bash::prompt($color = false) {
 		$t_color = $color ? {
 			false   => '\033[01;32m',
