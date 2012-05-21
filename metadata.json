@@ -8,8 +8,10 @@
   "summary": "BASH Module",
   "version": "0.0.10",
   "checksums": {
+    "Gemfile": "d5ce5c80f3c31e583507eb80b61b7400",
     "Modulefile": "1b5e9da92ee3d9be3c9f02f26e0a3f2a",
     "README": "95f2a09d5c402843db94805a355b0774",
+    "Rakefile": "aac3a0179a3d0a7749c5dfc1384829e5",
     "examples/bash.yaml": "fc404e95af10d646bea0c8b4c1c55b10",
     "manifests/init.pp": "c5e21966257b6caf526cd46229a05ede",
     "manifests/params.pp": "8c638f55c1b1c38ba75a493a9f994a77",
