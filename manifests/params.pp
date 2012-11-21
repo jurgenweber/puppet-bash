@@ -1,6 +1,6 @@
 class bash::params {
   case $::lsbdistcodename {
-    'squeeze', 'natty': {
+    'squeeze': {
       $green = hiera('green')
       $red   = hiera('red')
     }
