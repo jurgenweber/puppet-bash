@@ -12,7 +12,7 @@
 #
 class bash::params {
   case $::lsbdistcodename {
-    'squeeze', 'wheezy', 'precise': {
+    'squeeze', 'wheezy', 'precise', 'quantal': {
       $color_root = '31'
       $color_user = '32'
     }
