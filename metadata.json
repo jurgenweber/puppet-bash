@@ -19,10 +19,11 @@
     "manifests/config.pp": "f71e1ae74322ef14d83fd505fd690bcc",
     "manifests/init.pp": "dee0e1424cb3b68e36732076bfd61cab",
     "manifests/package.pp": "59c372b7a72f66ba55f2b8991403b85f",
-    "manifests/params.pp": "1d95de0b8e79237189736df8123a5d59",
+    "manifests/params.pp": "ed70adf84aacfb8935391ea283beb21b",
     "manifests/prompt.pp": "22c26917f90307a0af24cba33958eee4",
     "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
     "spec/spec_helper.rb": "3ea886dd135e120afa31e0aab12e85b0",
+    "templates/precise/etc/skel/bashrc.erb": "4b51e91cf880b2c24b07075c9a46f31a",
     "templates/squeeze/etc/skel/bashrc.erb": "ebb9ffc2c4f1c6bd6e3234fd2b68e56a",
     "templates/wheezy/etc/skel/bashrc.erb": "1422c4413edb40afec662d2e5c670321",
     "tests/init.pp": "31b78a37212a0bdaaa3a2ea558b91721"
