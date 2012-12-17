@@ -1,4 +1,4 @@
-# = Class: bash
+# = Class: bash::package
 #
 # This module manages bash
 #
@@ -10,7 +10,10 @@
 #
 # == Sample Usage:
 #
-class bash {
-  class { 'bash::package': }
-  class { 'bash::config': }
+class bash::package {
+  package { [
+    'bash',
+    'bash-completion' ]:
+    ensure => present,
+  }
 }

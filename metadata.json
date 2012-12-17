@@ -6,27 +6,29 @@
   "project_page": "http://github.com/dhoppe/puppet-bash",
   "source": "git://github.com/dhoppe/puppet-bash",
   "summary": "BASH Module",
-  "version": "0.0.10",
+  "version": "0.1.0",
   "checksums": {
     ".fixtures.yml": "80586f5d0d912cbd6e3a7a7903b4e2d2",
     ".gemfile": "73cc3f47b89e2b1dbde81dd5cb35d230",
     ".travis.yml": "42dc25c6f766b53cbe7cbe8c5a293561",
     "LICENSE": "b234ee4d69f5fce4486a80fdaf4a4263",
-    "Modulefile": "1b5e9da92ee3d9be3c9f02f26e0a3f2a",
+    "Modulefile": "9390248bdeea6eac1ac7a36c775b7bd7",
     "README": "95f2a09d5c402843db94805a355b0774",
     "Rakefile": "6c0454b5f83810523ed776de5afd1fe6",
-    "examples/bash.yaml": "fc404e95af10d646bea0c8b4c1c55b10",
-    "manifests/init.pp": "c5e21966257b6caf526cd46229a05ede",
-    "manifests/params.pp": "f6d624965d5105efe9165d86277fabd2",
-    "manifests/prompt.pp": "d848a8eb38be71088490f3b0632c81ee",
+    "examples/bash.yaml": "a1f72bbcd780bf80221e0299695fc9cb",
+    "manifests/config.pp": "f71e1ae74322ef14d83fd505fd690bcc",
+    "manifests/init.pp": "dee0e1424cb3b68e36732076bfd61cab",
+    "manifests/package.pp": "59c372b7a72f66ba55f2b8991403b85f",
+    "manifests/params.pp": "a2e8c7f5f9e7d34249d1df668168a6ea",
+    "manifests/prompt.pp": "22c26917f90307a0af24cba33958eee4",
     "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
     "spec/spec_helper.rb": "3ea886dd135e120afa31e0aab12e85b0",
-    "templates/squeeze/etc/skel/bashrc.erb": "511e081a69df0ac0af6b305c4de25129",
+    "templates/squeeze/etc/skel/bashrc.erb": "ebb9ffc2c4f1c6bd6e3234fd2b68e56a",
     "tests/init.pp": "31b78a37212a0bdaaa3a2ea558b91721"
   },
   "dependencies": [
     {
-      "name": "dhoppe/puppet",
+      "name": "puppetlabs/stdlib",
       "version_requirement": "\u003e\u003d0.0.1"
     }
   ]

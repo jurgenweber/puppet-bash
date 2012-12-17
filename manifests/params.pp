@@ -1,8 +1,20 @@
+# = Class: bash::params
+#
+# This module manages bash
+#
+# == Parameters: none
+#
+# == Actions:
+#
+# == Requires: see Modulefile
+#
+# == Sample Usage:
+#
 class bash::params {
   case $::lsbdistcodename {
     'squeeze': {
-      $green = hiera('green')
-      $red   = hiera('red')
+      $color_root = '31'
+      $color_user = '32'
     }
     default: {
       fail("Module ${module_name} does not support ${::lsbdistcodename}")
