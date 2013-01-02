@@ -15,10 +15,10 @@ class bash::config (
   $color_user = hiera('color_user', $bash::params::color_user),
 ) inherits bash::params {
   bash::prompt { '/etc/skel/.bashrc':
-    color  => $color_user,
+    color => $color_user,
   }
 
   bash::prompt { '/root/.bashrc':
-    color  => $color_root,
+    color => $color_root,
   }
 }

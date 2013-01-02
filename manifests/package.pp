@@ -14,6 +14,6 @@ class bash::package {
   package { [
     'bash',
     'bash-completion' ]:
-    ensure => present,
+      ensure => present,
   }
 }
