@@ -3,8 +3,8 @@ class bash (
   $color_red   = $bash::params::red
 ) inherits bash::params {
 
-  validate_string(hiera('green'))
-  validate_string(hiera('red'))
+  #validate_string(hiera('green'))
+  #validate_string(hiera('red'))
 
   bash::prompt { '/etc/skel/.bashrc':
     color => $color_green,
