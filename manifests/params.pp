@@ -6,4 +6,25 @@ class bash::params {
   $cyan       = '\033[0;36m'
   $light_cyan = '\033[1;36m'
   $no_colour  = '\033[0m'
+
+   case $::osfamily {
+    Debian: {
+      $packages = [
+        'bash',
+        'bash-completion',
+      ]
+    }
+    FreeBSD: {
+      $packages = [
+        'bash',
+        'bash-completion',
+      ]
+    }
+    redhat: {
+      $packages = [
+        'bash',
+        'bash-completion',
+      ]
+    }
+  }
 }
