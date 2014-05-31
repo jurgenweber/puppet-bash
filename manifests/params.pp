@@ -8,19 +8,19 @@ class bash::params {
   $no_colour  = '\033[0m'
 
    case $::osfamily {
-    Debian: {
+    'Debian': {
       $packages = [
         'bash',
         'bash-completion',
       ]
     }
-    FreeBSD: {
+    'FreeBSD': {
       $packages = [
         'bash',
         'bash-completion',
       ]
     }
-    redhat: {
+    'redhat': {
       $packages = [
         'bash',
         'bash-completion',
