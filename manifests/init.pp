@@ -2,10 +2,9 @@
 #
 #
 class bash (
-  $color_green    = $bash::params::green,
-  $color_red      = $bash::params::red,
   $root_prompt    = undef,
   $default_prompt = undef,
+  $options        = params_lookup( 'options' ),
 ) inherits params {
 
   package { $params::packages:
