@@ -4,7 +4,6 @@
 class bash (
   $color_green = $bash::params::green,
   $color_red   = $bash::params::red,
-  $options     = params_lookup( 'options' ),
 ) inherits params {
 
   package { $params::packages:
