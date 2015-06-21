@@ -1,7 +1,13 @@
 #
 #
 #
-define bash::prompt($color) {
+define bash::prompt(
+  $color    = $bash::params::green,
+  $prompt   = undef,
+) {
+
+  include params
+
   file { $name:
     owner   => 'root',
     group   => 'root',
