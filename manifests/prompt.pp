@@ -1,3 +1,6 @@
+#
+#
+#
 define bash::prompt($color) {
   file { $name:
     owner   => 'root',

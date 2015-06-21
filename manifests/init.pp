@@ -1,3 +1,6 @@
+#
+#
+#
 class bash (
   $color_green = $bash::params::green,
   $color_red   = $bash::params::red,

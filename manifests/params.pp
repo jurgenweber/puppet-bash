@@ -1,3 +1,6 @@
+#
+#
+#
 class bash::params {
   $green      = '\033[01;32m'
   $red        = '\033[01;31m'
