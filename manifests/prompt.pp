@@ -6,7 +6,7 @@ define bash::prompt(
   $prompt   = undef,
 ) {
 
-  include params
+  include bash::params
 
   file { $name:
     owner   => 'root',

@@ -3,16 +3,16 @@
 # this will set the ground work,
 #
 # class { 'bash::aliases': }
-# 
+#
 # then to add custom aliases
 #
 # bash::add_alias { 'name':
-#  cmd  => 'ls /', 
+#  cmd  => 'ls /',
 # }
 #
 class bash::aliases (
   $user    = root,
-) inherits params {
+) inherits bash::params {
 
   if $user == 'root' {
     $path = "/${user}/.bash_aliases"

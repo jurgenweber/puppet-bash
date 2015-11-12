@@ -4,10 +4,10 @@
 class bash (
   $root_prompt    = undef,
   $default_prompt = undef,
-  $options        = params_lookup( 'options' ),
-) inherits params {
+  $options        = undef,
+) inherits bash::params {
 
-  package { $params::packages:
+  package { $bash::params::packages:
     ensure => installed,
   }
 
