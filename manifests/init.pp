@@ -5,10 +5,11 @@ class bash (
   $root_prompt    = undef,
   $default_prompt = undef,
   $options        = undef,
+  $version        = installed,
 ) inherits bash::params {
 
   package { $bash::params::packages:
-    ensure => installed,
+    ensure => $version,
   }
 
   bash::prompt { '/etc/skel/.bashrc':
