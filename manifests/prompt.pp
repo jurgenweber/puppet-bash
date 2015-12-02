@@ -4,9 +4,8 @@
 define bash::prompt(
   $color    = $bash::params::green,
   $prompt   = undef,
+  $options  = undef,
 ) {
-
-  include bash::params
 
   file { $name:
     owner   => 'root',
@@ -14,4 +13,5 @@ define bash::prompt(
     mode    => '0644',
     content => template("bash/${::lsbdistcodename}/etc/skel/bashrc.erb"),
   }
+
 }
