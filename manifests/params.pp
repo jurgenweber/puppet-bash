@@ -10,20 +10,23 @@ class bash::params {
   $light_cyan = '\033[1;36m'
   $no_colour  = '\033[0m'
 
-   case $::osfamily {
+   case $::operatingsystem {
     'Debian': {
+      $bashrc = '/etc/skel/.bashrc'
       $packages = [
         'bash',
         'bash-completion',
       ]
     }
     'FreeBSD': {
+      $bashrc = '/usr/local/etc/bash.bashrc'
       $packages = [
         'bash',
         'bash-completion',
       ]
     }
-    'redhat': {
+    'Ubuntu': {
+      $bashrc = '/etc/skel/.bashrc'
       $packages = [
         'bash',
         'bash-completion',

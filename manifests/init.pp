@@ -12,7 +12,7 @@ class bash (
     ensure => $version,
   }
 
-  bash::prompt { '/etc/skel/.bashrc':
+  bash::prompt { $bash::params::bashrc:
     options => $options,
     color   => $bash::params::green,
     prompt  => $default_prompt,

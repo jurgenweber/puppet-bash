@@ -1,7 +1,7 @@
 #
 #
 #
-define bash::prompt(
+define bash::prompt (
   $color    = $bash::params::green,
   $prompt   = undef,
   $options  = undef,
@@ -11,7 +11,7 @@ define bash::prompt(
     owner   => 'root',
     group   => 'root',
     mode    => '0644',
-    content => template("bash/${::lsbdistcodename}/etc/skel/bashrc.erb"),
+    content => template("bash/${::operatingsystem}/etc/skel/bashrc.erb"),
   }
 
 }
