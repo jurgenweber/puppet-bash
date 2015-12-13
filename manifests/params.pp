@@ -17,6 +17,7 @@ class bash::params {
         'bash',
         'bash-completion',
       ]
+      $admin_group = 'root'
     }
     'FreeBSD': {
       $bashrc = '/usr/local/etc/bash.bashrc'
@@ -24,6 +25,7 @@ class bash::params {
         'bash',
         'bash-completion',
       ]
+      $admin_group = 'wheel'
     }
     'Ubuntu': {
       $bashrc = '/etc/skel/.bashrc'
@@ -31,6 +33,7 @@ class bash::params {
         'bash',
         'bash-completion',
       ]
+      $admin_group = 'root'
     }
   }
 }

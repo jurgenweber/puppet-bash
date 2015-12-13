@@ -22,6 +22,7 @@ class bash::aliases (
 
   concat { $path:
    ensure  => present,
+   group   => $bash::admin_group,
   }
 
   concat::fragment { 'aliases_header':
