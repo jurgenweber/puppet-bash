@@ -11,7 +11,7 @@ class bash::params {
   $no_colour  = '\033[0m'
 
    case $::operatingsystem {
-    'Debian|Raspbian': {
+    /(Debian|Raspbian|Kali)/: {
       $bashrc = '/etc/skel/.bashrc'
       $packages = [
         'bash',
