@@ -10,7 +10,13 @@ class bash::params {
   $light_cyan = '\033[1;36m'
   $no_colour  = '\033[0m'
 
-   case $::operatingsystem {
+  $my_os_family = if $facts['os']['family'] {
+    $facts['os']['family']
+  } else {
+    $::operatingsystem
+  }
+
+   case $my_os_family {
     /(Debian|Raspbian|Kali)/: {
       $bashrc = '/etc/skel/.bashrc'
       $packages = [
