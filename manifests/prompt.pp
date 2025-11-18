@@ -9,11 +9,17 @@ define bash::prompt (
 
   include bash::params
 
+  $my_os_family = if $facts['os']['family'] {
+    $facts['os']['family']
+  } else {
+    $::osfamily
+  }
+
   file { $name:
     owner   => 'root',
     group   => $bash::admin_group,
     mode    => '0644',
-    content => template("bash/${::operatingsystem}/etc/skel/bashrc.erb"),
+    content => template("bash/${my_os_family}/etc/skel/bashrc.erb"),
   }
 
 }
