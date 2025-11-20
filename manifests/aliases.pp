@@ -22,7 +22,6 @@ class bash::aliases (
 
   concat { $path:
    ensure => present,
-   format => 'plain',
    group  => $bash::admin_group,
   }
 
